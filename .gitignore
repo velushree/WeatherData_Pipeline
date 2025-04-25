@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+*.env
+
+# Airflow logs and temp files
+logs/
+*.log
+
+# Python virtual environment
+venv/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# FAISS index and pickled files
+db/faiss_index/
+*.pkl
+*.faiss
+
+# Docker
+*.pid
+*.sock
+docker-compose.override.yaml
+
+# Kafka SSL certs
+kafka_certs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore compiled dags
+dags/*.pyc
+scripts/*.pyc
+
+# Ignore outputs from DAG runs
+logs/**/run_id=*/task_id=*/attempt=*.log
+
+# Ignore Snowflake creds or artifacts
+*.snowsql
+*.snowflake
+
+# Ignore any local backup or temp files
+*.bak
+*.tmp
+*~
+
+# Ignore test and sample data (if not required)
+db/sample/
+
+# Ignore secrets and credentials if accidentally created
+secrets.*
+
+#Ignore txt files
+*.txt
+
+# snowflake folder
+snowflake/

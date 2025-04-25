@@ -1,0 +1,43 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore data (text files)
+data/
+
+# Ignore virtual environments
+venv/
+.env/
+*.env
+
+# Ignore Airflow logs and compiled DAGs
+dags/__pycache__/
+logs/
+plugins/__pycache__/
+
+# Ignore Kafka certs and runtime data
+kafka_certs/
+kafka_weather_data/__pycache__/
+
+# Ignore FAISS index and pickle files
+db/faiss_index/
+
+# VSCode settings
+.vscode/
+
+# Git-related
+.git
+.gitignore
+
+# Docker-related
+Dockerfile
+docker-compose.yaml
+
+# Ignore Snowflake scripts if not needed in image
+snowflake/
