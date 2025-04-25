@@ -34,31 +34,31 @@ Getting Started
 
 1. Clone the Repo
 
-git clone https://github.com/<your-username>/WeatherData_Pipeline.git
-cd WeatherData_Pipeline'
+        git clone https://github.com/<your-username>/WeatherData_Pipeline.git
+        cd WeatherData_Pipeline'
 
 2. Set up environment
  
-conda env create -f environment.yml
-conda activate weather_env
+        conda env create -f environment.yml
+        conda activate weather_env
 
 3. Run with Docker
    
-docker-compose up --build
+        docker-compose up --build
 
 4. Run kafka
 
-python weather_data_responder.py
+        python weather_data_responder.py
 
 5. Run streamlit 
 
-streamlit run app.py
+        streamlit run app.py
 
 -----
 
 Chatbot Demo
 
-“What was the weather in Tokyo last week?”
+        “What was the weather in Tokyo last week?”
 
-“Tell me about New York's recent climate”
+        “Tell me about New York's recent climate”
 
